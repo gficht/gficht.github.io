@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://gficht.github.io/atom.xml" rel="self"/>
   <link href="http://gficht.github.io/"/>
-  <updated>2015-03-31T22:02:23+02:00</updated>
+  <updated>2015-03-31T22:06:20+02:00</updated>
   <id>http://gficht.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[First Post Title]]></title>
+    <link href="http://gficht.github.io/blog/2015/03/31/first-post-title/"/>
+    <updated>2015-03-31T22:05:18+02:00</updated>
+    <id>http://gficht.github.io/blog/2015/03/31/first-post-title</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
 </feed>
