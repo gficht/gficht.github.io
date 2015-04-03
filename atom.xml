@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[gficht]]></title>
+  <title><![CDATA[gficht>]]></title>
   <link href="http://gficht.github.io/atom.xml" rel="self"/>
   <link href="http://gficht.github.io/"/>
-  <updated>2015-04-03T19:57:13+02:00</updated>
+  <updated>2015-04-03T20:57:10+02:00</updated>
   <id>http://gficht.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[gficht]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
