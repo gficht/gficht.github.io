@@ -4,7 +4,7 @@
   <title><![CDATA[./gficht/]]></title>
   <link href="http://gficht.github.io/atom.xml" rel="self"/>
   <link href="http://gficht.github.io/"/>
-  <updated>2015-04-10T23:49:22+02:00</updated>
+  <updated>2015-04-25T23:12:58+02:00</updated>
   <id>http://gficht.github.io/</id>
   <author>
     <name><![CDATA[gficht]]></name>
@@ -14,20 +14,17 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Second Post]]></title>
-    <link href="http://gficht.github.io/blog/2015/04/04/second-post/"/>
-    <updated>2015-04-04T00:10:10+02:00</updated>
-    <id>http://gficht.github.io/blog/2015/04/04/second-post</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[First Post Title]]></title>
-    <link href="http://gficht.github.io/blog/2015/03/31/first-post-title/"/>
-    <updated>2015-03-31T22:05:18+02:00</updated>
-    <id>http://gficht.github.io/blog/2015/03/31/first-post-title</id>
-    <content type="html"><![CDATA[
+    <title type="html"><![CDATA[First Biped Robot]]></title>
+    <link href="http://gficht.github.io/blog/2015/04/25/first-biped-robot/"/>
+    <updated>2015-04-25T22:23:39+02:00</updated>
+    <id>http://gficht.github.io/blog/2015/04/25/first-biped-robot</id>
+    <content type="html"><![CDATA[<p>I&#39;d like to start off with the first robot I&#39;ve ever built. This was way back in 2008.</p>
+
+<!--more-->
+
+<p><img src="http://gficht.github.io/images/2015/04/1.jpg" alt="Biped" style="width: 200px;" align="left"/> I&#39;ve just started studying Automation and Robotics at Gdansk university of Technology. I decided to study that, after seeing a video of a robot called OmniZero.2 while still in high school. In the <a href="https://www.youtube.com/watch?v=a5O6ik1Jr6E">video</a> - the robot created by Mr Takeshi Maeda was moving with such agility it was unbelievable for me. He clearly left all the competitors behind. For a technical high school student learning electronics, this was a huge feat. So I decided to give it a go and build something similar. The efforts can be seen on the left.</p>
+
+<p><img src="http://gficht.github.io/images/2015/04/2.jpg" alt="Controller" style="width: 200px;" align="right"/>It used 14 TowerPro SG-5010 servos, the frame was cut out of plexiglass. The design was completely in my head - I drew the parts that were supposed to be cut out in vector graphics. The servocontroller I also did by myself. The PCB was big and bulky. The ATmega16 was just enough to run 24 servos with the use of interrupts. Everything was so unprofessional - but it worked and made me feel good about it. After trying some simple control schemes(a simple walking gait) I abandoned the robot and sold the servos. I learned a lot of valuable things by doing the project. This prepared me for another one I&#39;d be doing in the future.</p>
 ]]></content>
   </entry>
   
