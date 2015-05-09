@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Robots | ./gficht/]]></title>
   <link href="http://gficht.github.io/blog/categories/robots/atom.xml" rel="self"/>
   <link href="http://gficht.github.io/"/>
-  <updated>2015-04-27T21:25:30+02:00</updated>
+  <updated>2015-05-09T21:48:07+02:00</updated>
   <id>http://gficht.github.io/</id>
   <author>
     <name><![CDATA[gficht]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[First Humanoid Robot]]></title>
+    <link href="http://gficht.github.io/blog/2015/05/09/first-humanoid-robot/"/>
+    <updated>2015-05-09T19:57:13+02:00</updated>
+    <id>http://gficht.github.io/blog/2015/05/09/first-humanoid-robot</id>
+    <content type="html"><![CDATA[<p>Shortly after my first biped robot I started designing a new one, which later on became the subject of my Bachelor&#39;s Thesis.</p>
+
+<!--more-->
+
+<p><img src="http://gficht.github.io/images/2015/05/03.png" alt="Humanoid" style="width: 200px;" align="left"/> To prepare for the project, I tested various CAD software, finally settling with Eagle PCB for the electronics and Autodesk Inventor for the mechanics. This robot used stronger than before, 21 MG996r TowerPro servos. To achieve a more stable walk, the torque in the legs was maximized by connecting the servos in a parallel configuration. The frame of the robot was machined out of aluminum, for minimizing the weight and providing enough stiffness. A lot of the components were designed to be later replaced by carbon fibre parts. The whole robot weighed in at 2kg, while the servos amounted to 60% of its weight. The controller was built using the ATmega128. It had the ability to simultaneously control the position and speed of each individual servo, gather data from various analog sensors, select the mode of operation and connect expansion modules via UART, SPI and I2C. For the walking gait, feedback from an analog accelerometer was used to balance the robot in the Roll axis. The Pitch axis was auto-balanced by the parallel link mechanism(PLM). Here are some(although not really good) videos which show everything in motion:</p>
+
+<div class="embed-video-container"><iframe width="250" height="190" src="https://www.youtube.com/embed/5ksXNbJz9hg" frameborder="0" allowfullscreen></iframe></div>
+
+<div class="embed-video-container"><iframe width="250" height="190" src="https://www.youtube.com/embed/rdqGkcPLXtA" frameborder="0" allowfullscreen></iframe></div>
+
+<div class="embed-video-container"><iframe width="250" height="190" src="https://www.youtube.com/embed/WpdK5LSF_rU" frameborder="0" allowfullscreen></iframe> </div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[First Biped Robot]]></title>
@@ -22,9 +41,9 @@
 
 <!--more-->
 
-<p><img src="http://gficht.github.io/images/2015/04/1.jpg" alt="Biped" style="width: 200px;" align="left"/> I&#39;ve just started studying Automation and Robotics at Gdansk university of Technology. I decided to study that, after seeing a video of a robot called OmniZero.2 while still in high school. In the <a href="https://www.youtube.com/watch?v=a5O6ik1Jr6E">video</a> - the robot created by Mr Takeshi Maeda was moving with such agility it was unbelievable for me. He clearly left all the competitors behind. For a technical high school student learning electronics, this was a huge feat. So I decided to give it a go and build something similar. The efforts can be seen on the left.</p>
+<p><img src="http://gficht.github.io/images/2015/04/01.jpg" alt="Biped" style="width: 200px;" align="left"/> I&#39;ve just started studying Automation and Robotics at Gdansk university of Technology. I decided to study that, after seeing a video of a robot called OmniZero.2 while still in high school. In the <a href="https://www.youtube.com/watch?v=a5O6ik1Jr6E">video</a> - the robot created by Mr Takeshi Maeda was moving with such agility it was unbelievable for me. He clearly left all the competitors behind. For a technical high school student learning electronics, this was a huge feat. So I decided to give it a go and build something similar. The efforts can be seen on the left.</p>
 
-<p><img src="http://gficht.github.io/images/2015/04/2.jpg" alt="Controller" style="width: 200px;" align="right"/>It used 14 TowerPro SG-5010 servos, the frame was cut out of plexiglass. The design was completely in my head - I drew the parts that were supposed to be cut out in vector graphics. The servocontroller I also did by myself. The PCB was big and bulky. The ATmega16 was just enough to run 24 servos with the use of interrupts. Everything was so unprofessional - but it worked and made me feel good about it. After trying some simple control schemes(a simple walking gait) I abandoned the robot and sold the servos. I learned a lot of valuable things by doing the project. This prepared me for another one I&#39;d be doing in the future.</p>
+<p><img src="http://gficht.github.io/images/2015/04/02.jpg" alt="Controller" style="width: 200px;" align="right"/>It used 14 TowerPro SG-5010 servos, the frame was cut out of plexiglass. The design was completely in my head - I drew the parts that were supposed to be cut out in vector graphics. The servocontroller I also did by myself. The PCB was big and bulky. The ATmega16 was just enough to run 24 servos with the use of interrupts. Everything was so unprofessional - but it worked and made me feel good about it. After trying some simple control schemes(a simple walking gait) I abandoned the robot and sold the servos. I learned a lot of valuable things by doing the project. This prepared me for another one I&#39;d be doing in the future.</p>
 ]]></content>
   </entry>
   

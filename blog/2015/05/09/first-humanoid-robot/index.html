@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>./gficht/</title>
+  <title>First Humanoid Robot - ./gficht/</title>
   <meta name="author" content="gficht">
 
   
-  <meta name="description" content="Shortly after my first biped robot I started designing a new one, which later on became the subject of my Bachelor&#39;s Thesis. ">
+  <meta name="description" content="Shortly after my first biped robot I started designing a new one, which later on became the subject of my Bachelor&#39;s Thesis. To prepare for the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gficht.github.io/">
+  <link rel="canonical" href="http://gficht.github.io/blog/2015/05/09/first-humanoid-robot/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="./gficht/" type="application/atom+xml">
@@ -68,15 +68,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2015/05/09/first-humanoid-robot/">First Humanoid Robot</a></h1>
+      <h1 class="entry-title">First Humanoid Robot</h1>
     
     
       <p class="meta">
@@ -92,59 +89,64 @@
   </header>
 
 
-  <div class="entry-content"><p>Shortly after my first biped robot I started designing a new one, which later on became the subject of my Bachelor&#39;s Thesis.</p>
+<div class="entry-content"><p>Shortly after my first biped robot I started designing a new one, which later on became the subject of my Bachelor&#39;s Thesis.</p>
 
+<!--more-->
+
+<p><img src="/images/2015/05/03.png" alt="Humanoid" style="width: 200px;" align="left"/> To prepare for the project, I tested various CAD software, finally settling with Eagle PCB for the electronics and Autodesk Inventor for the mechanics. This robot used stronger than before, 21 MG996r TowerPro servos. To achieve a more stable walk, the torque in the legs was maximized by connecting the servos in a parallel configuration. The frame of the robot was machined out of aluminum, for minimizing the weight and providing enough stiffness. A lot of the components were designed to be later replaced by carbon fibre parts. The whole robot weighed in at 2kg, while the servos amounted to 60% of its weight. The controller was built using the ATmega128. It had the ability to simultaneously control the position and speed of each individual servo, gather data from various analog sensors, select the mode of operation and connect expansion modules via UART, SPI and I2C. For the walking gait, feedback from an analog accelerometer was used to balance the robot in the Roll axis. The Pitch axis was auto-balanced by the parallel link mechanism(PLM). Here are some(although not really good) videos which show everything in motion:</p>
+
+<div class="embed-video-container"><iframe width="250" height="190" src="https://www.youtube.com/embed/5ksXNbJz9hg" frameborder="0" allowfullscreen></iframe></div>
+
+<div class="embed-video-container"><iframe width="250" height="190" src="https://www.youtube.com/embed/rdqGkcPLXtA" frameborder="0" allowfullscreen></iframe></div>
+
+<div class="embed-video-container"><iframe width="250" height="190" src="https://www.youtube.com/embed/WpdK5LSF_rU" frameborder="0" allowfullscreen></iframe> </div>
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2015/05/09/first-humanoid-robot/">Read on &rarr;</a>
-    </footer>
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
+  
+
+<span class="byline author vcard">Posted by <span class="fn">gficht</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-05-09T19:57:13+02:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>7:57 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/embedded-linux/'>embedded linux</a>, <a class='category' href='/blog/categories/matlab-and-octave/'>matlab and octave</a>, <a class='category' href='/blog/categories/robots/'>robots</a>, <a class='category' href='/blog/categories/ros/'>ros</a>
+  
+</span>
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2015/04/25/first-biped-robot/">First Biped Robot</a></h1>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://gficht.github.io/blog/2015/05/09/first-humanoid-robot/" data-via="" data-counturl="http://gficht.github.io/blog/2015/05/09/first-humanoid-robot/" >Tweet</a>
+  
+  
+  
+</div>
+
     
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-25T22:23:39+02:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:23 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&#39;d like to start off with the first robot I&#39;ve ever built. This was way back in 2008.</p>
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/04/25/first-biped-robot/" title="Previous Post: First Biped Robot">&laquo; First Biped Robot</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2015/04/25/first-biped-robot/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -168,6 +170,7 @@
 
   
 </aside>
+
 
     </div>
   </div>
