@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>First Biped Robot - ./gficht/</title>
+  <title>My Micromouse Robots - ./gficht/</title>
   <meta name="author" content="gficht">
 
   
-  <meta name="description" content="I&#39;d like to start off with the first robot I&#39;ve ever built. This was way back in 2008. I&#39;ve just started studying Automation and Robotics &hellip;">
+  <meta name="description" content="In between building humanoid robots, I got interested in Micromice, which are maze solving robots. Building a successful micromouse is as much about &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://gficht.github.io/blog/2015/04/25/first-biped-robot/">
+  <link rel="canonical" href="http://gficht.github.io/blog/2015/05/23/my-micromouse-robots/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="./gficht/" type="application/atom+xml">
@@ -73,7 +73,7 @@
   
   <header>
     
-      <h1 class="entry-title">First Biped Robot</h1>
+      <h1 class="entry-title">My Micromouse Robots</h1>
     
     
       <p class="meta">
@@ -82,20 +82,33 @@
 
 
 
-<time class='entry-date' datetime='2015-04-25T22:23:39+02:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:23 pm</span></time>
+<time class='entry-date' datetime='2015-05-23T21:24:51+02:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>9:24 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>I&#39;d like to start off with the first robot I&#39;ve ever built. This was way back in 2008.</p>
+<div class="entry-content"><p>In between building humanoid robots, I got interested in Micromice, which are maze solving robots. </p>
 
 <!--more-->
 
-<p><img src="/images/2015/04/01.jpg" alt="Biped" style="width: 200px;" align="left"/> I&#39;ve just started studying Automation and Robotics at Gdansk university of Technology. I decided to study that, after seeing a video of a robot called OmniZero.2 while still in high school. In the <a href="https://www.youtube.com/watch?v=a5O6ik1Jr6E">video</a> - the robot created by Mr Takeshi Maeda was moving with such agility it was unbelievable for me. He clearly left all the competitors behind. For a technical high school student learning electronics, this was a huge feat. So I decided to give it a go and build something similar. The efforts can be seen on the left.</p>
+<p><img src="/images/2015/05/04.jpg" alt="Two Wheel Micromouse" style="width: 100px;" align="right"/>Building a successful micromouse is as much about the hardware as the software. On the right is my first micromouse. Unfortunately the chosen microcontroller - ATmega328 was not up to the task of handling so many interrupts generated from the encoders.  Even after writing assembly subroutines to handle the interrupts the microcontroller had just too little computing power. I quickly decided to switch to a more advanced STM32 microcontroller running at 72MHz with hardware support for quadrature encoders. The microcontroller wasn&#39;t the only thing that improved in the new micromouse. The two-wheel design evolved into a four-wheel, which resulted in additional 2 contact points. I have added: a small screen for live data output, micro sd card data logger and UART to bluetooth converter. <br>
+<img src="/images/2015/05/05.png" alt="Four Wheel Micromouse" style="width: 300px;" align="left"/>This robot was an excellent research platform for algorithm testing. I have successfully implemented the non-linear model of the robot in Matlab/Simulink, linearized it by using the feedback-linearization method and made it solve and run mazes with times that approached the world record. An example of the simulation can be seen below. <br>
+The maze is built using  a template in microsoft excel and then imported into Matlab, solved using the flood-fill algorithm and the resulting trajectory is then passed on to the controller. Unfortunately, this method involved too much floating-point arithmethics for it to be possible to implement. An alternative PD-controller setup for position and angle was used and performed relatively well.<br>
+<img src="/images/2015/05/06.png" alt="Non Linear Solving" style="width: 100%;"/> </p>
 
-<p><img src="/images/2015/04/02.jpg" alt="Controller" style="width: 200px;" align="right"/>It used 14 TowerPro SG-5010 servos, the frame was cut out of plexiglass. The design was completely in my head - I drew the parts that were supposed to be cut out in vector graphics. The servocontroller I also did by myself. The PCB was big and bulky. The ATmega16 was just enough to run 24 servos with the use of interrupts. Everything was so unprofessional - but it worked and made me feel good about it. After trying some simple control schemes(a simple walking gait) I abandoned the robot and sold the servos. I learned a lot of valuable things by doing the project. This prepared me for another one I&#39;d be doing in the future.</p>
+<p>I have published 2 papers based on this robot. One is in Polish, and one in English:</p>
+
+<p>[1] <a href="http://www.fimb.p.lodz.pl/wp-content/uploads/2013/01/FIMB-v1.1.pdf">Ficht G., Piotrowski R. (2012). <em>Micromouse robot - technical design and construction.</em> Forum of Innovation of Young researchers - FIMB, ISSN 2082 - 4831, 12-16</a><br>
+[2] <a href="http://pak.info.pl/index.php?menu=artykulSzczegol&idArtykul=4275">Ficht G., Piotrowski R. (2014). <em>Robot typu Micromouse - wykonanie, sterowanie i optymalizacja.</em> Pomiary Automatyka Kontrola, Vol. 60, Nr 12, 1235-1240.</a></p>
+
+<p>Here are two early-stage development videos:<br>
+<div class="embed-video-container"><iframe width="250" height="190" src="http://www.youtube.com/watch?v=q7Btg9rAVLU" frameborder="0" allowfullscreen></iframe></div><br>
+<div class="embed-video-container"><iframe width="250" height="190" src="http://www.youtube.com/watch?v=i0ZhUyLVzYQ" frameborder="0" allowfullscreen></iframe></div></p>
+
+<p>That&#39;s it for now, thanks for reading.<br>
+gficht</p>
 </div>
 
 
@@ -111,7 +124,7 @@
 
 
 
-<time class='entry-date' datetime='2015-04-25T22:23:39+02:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:23 pm</span></time>
+<time class='entry-date' datetime='2015-05-23T21:24:51+02:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>9:24 pm</span></time>
       
 
 <span class="categories">
@@ -125,7 +138,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://gficht.github.io/blog/2015/04/25/first-biped-robot/" data-via="" data-counturl="http://gficht.github.io/blog/2015/04/25/first-biped-robot/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://gficht.github.io/blog/2015/05/23/my-micromouse-robots/" data-via="" data-counturl="http://gficht.github.io/blog/2015/05/23/my-micromouse-robots/" >Tweet</a>
   
   
   
@@ -134,8 +147,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2015/05/09/first-humanoid-robot/" title="Previous Post: First Humanoid Robot">&laquo; First Humanoid Robot</a>
       
-        <a class="basic-alignment right" href="/blog/2015/05/09/first-humanoid-robot/" title="Next Post: First Humanoid Robot">First Humanoid Robot &raquo;</a>
       
     </p>
   </footer>

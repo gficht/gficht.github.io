@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Robots | ./gficht/]]></title>
   <link href="http://gficht.github.io/blog/categories/robots/atom.xml" rel="self"/>
   <link href="http://gficht.github.io/"/>
-  <updated>2015-05-09T21:48:07+02:00</updated>
+  <updated>2015-05-23T22:35:15+02:00</updated>
   <id>http://gficht.github.io/</id>
   <author>
     <name><![CDATA[gficht]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My Micromouse Robots]]></title>
+    <link href="http://gficht.github.io/blog/2015/05/23/my-micromouse-robots/"/>
+    <updated>2015-05-23T21:24:51+02:00</updated>
+    <id>http://gficht.github.io/blog/2015/05/23/my-micromouse-robots</id>
+    <content type="html"><![CDATA[<p>In between building humanoid robots, I got interested in Micromice, which are maze solving robots. </p>
+
+<!--more-->
+
+<p><img src="http://gficht.github.io/images/2015/05/04.jpg" alt="Two Wheel Micromouse" style="width: 100px;" align="right"/>Building a successful micromouse is as much about the hardware as the software. On the right is my first micromouse. Unfortunately the chosen microcontroller - ATmega328 was not up to the task of handling so many interrupts generated from the encoders.  Even after writing assembly subroutines to handle the interrupts the microcontroller had just too little computing power. I quickly decided to switch to a more advanced STM32 microcontroller running at 72MHz with hardware support for quadrature encoders. The microcontroller wasn&#39;t the only thing that improved in the new micromouse. The two-wheel design evolved into a four-wheel, which resulted in additional 2 contact points. I have added: a small screen for live data output, micro sd card data logger and UART to bluetooth converter. <br>
+<img src="http://gficht.github.io/images/2015/05/05.png" alt="Four Wheel Micromouse" style="width: 300px;" align="left"/>This robot was an excellent research platform for algorithm testing. I have successfully implemented the non-linear model of the robot in Matlab/Simulink, linearized it by using the feedback-linearization method and made it solve and run mazes with times that approached the world record. An example of the simulation can be seen below. <br>
+The maze is built using  a template in microsoft excel and then imported into Matlab, solved using the flood-fill algorithm and the resulting trajectory is then passed on to the controller. Unfortunately, this method involved too much floating-point arithmethics for it to be possible to implement. An alternative PD-controller setup for position and angle was used and performed relatively well.<br>
+<img src="http://gficht.github.io/images/2015/05/06.png" alt="Non Linear Solving" style="width: 100%;"/> </p>
+
+<p>I have published 2 papers based on this robot. One is in Polish, and one in English:</p>
+
+<p>[1] <a href="http://www.fimb.p.lodz.pl/wp-content/uploads/2013/01/FIMB-v1.1.pdf">Ficht G., Piotrowski R. (2012). <em>Micromouse robot - technical design and construction.</em> Forum of Innovation of Young researchers - FIMB, ISSN 2082 - 4831, 12-16</a><br>
+[2] <a href="http://pak.info.pl/index.php?menu=artykulSzczegol&idArtykul=4275">Ficht G., Piotrowski R. (2014). <em>Robot typu Micromouse - wykonanie, sterowanie i optymalizacja.</em> Pomiary Automatyka Kontrola, Vol. 60, Nr 12, 1235-1240.</a></p>
+
+<p>Here are two early-stage development videos:<br>
+<div class="embed-video-container"><iframe width="250" height="190" src="http://www.youtube.com/watch?v=q7Btg9rAVLU" frameborder="0" allowfullscreen></iframe></div><br>
+<div class="embed-video-container"><iframe width="250" height="190" src="http://www.youtube.com/watch?v=i0ZhUyLVzYQ" frameborder="0" allowfullscreen></iframe></div></p>
+
+<p>That&#39;s it for now, thanks for reading.<br>
+gficht</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[First Humanoid Robot]]></title>
@@ -29,6 +57,9 @@
 <div class="embed-video-container"><iframe width="250" height="190" src="https://www.youtube.com/embed/rdqGkcPLXtA" frameborder="0" allowfullscreen></iframe></div>
 
 <div class="embed-video-container"><iframe width="250" height="190" src="https://www.youtube.com/embed/WpdK5LSF_rU" frameborder="0" allowfullscreen></iframe> </div>
+
+<p>That&#39;s it for now, be sure to come back for more reads.<br>
+gficht</p>
 ]]></content>
   </entry>
   
