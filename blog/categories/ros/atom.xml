@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ros | ./gficht/]]></title>
   <link href="http://gficht.github.io/blog/categories/ros/atom.xml" rel="self"/>
   <link href="http://gficht.github.io/"/>
-  <updated>2015-05-23T22:35:15+02:00</updated>
+  <updated>2015-05-23T23:00:58+02:00</updated>
   <id>http://gficht.github.io/</id>
   <author>
     <name><![CDATA[gficht]]></name>
@@ -33,8 +33,8 @@ The maze is built using  a template in microsoft excel and then imported into Ma
 [2] <a href="http://pak.info.pl/index.php?menu=artykulSzczegol&idArtykul=4275">Ficht G., Piotrowski R. (2014). <em>Robot typu Micromouse - wykonanie, sterowanie i optymalizacja.</em> Pomiary Automatyka Kontrola, Vol. 60, Nr 12, 1235-1240.</a></p>
 
 <p>Here are two early-stage development videos:<br>
-<div class="embed-video-container"><iframe width="250" height="190" src="http://www.youtube.com/watch?v=q7Btg9rAVLU" frameborder="0" allowfullscreen></iframe></div><br>
-<div class="embed-video-container"><iframe width="250" height="190" src="http://www.youtube.com/watch?v=i0ZhUyLVzYQ" frameborder="0" allowfullscreen></iframe></div></p>
+<div class="embed-video-container"><iframe src="//www.youtube.com/embed/q7Btg9rAVLU" allowfullscreen></iframe></div><br>
+<div class="embed-video-container"><iframe src="//www.youtube.com/embed/i0ZhUyLVzYQ" allowfullscreen></iframe></div></p>
 
 <p>That&#39;s it for now, thanks for reading.<br>
 gficht</p>
@@ -52,11 +52,9 @@ gficht</p>
 
 <p><img src="http://gficht.github.io/images/2015/05/03.png" alt="Humanoid" style="width: 200px;" align="left"/> To prepare for the project, I tested various CAD software, finally settling with Eagle PCB for the electronics and Autodesk Inventor for the mechanics. This robot used stronger than before, 21 MG996r TowerPro servos. To achieve a more stable walk, the torque in the legs was maximized by connecting the servos in a parallel configuration. The frame of the robot was machined out of aluminum, for minimizing the weight and providing enough stiffness. A lot of the components were designed to be later replaced by carbon fibre parts. The whole robot weighed in at 2kg, while the servos amounted to 60% of its weight. The controller was built using the ATmega128. It had the ability to simultaneously control the position and speed of each individual servo, gather data from various analog sensors, select the mode of operation and connect expansion modules via UART, SPI and I2C. For the walking gait, feedback from an analog accelerometer was used to balance the robot in the Roll axis. The Pitch axis was auto-balanced by the parallel link mechanism(PLM). Here are some(although not really good) videos which show everything in motion:</p>
 
-<div class="embed-video-container"><iframe width="250" height="190" src="https://www.youtube.com/embed/5ksXNbJz9hg" frameborder="0" allowfullscreen></iframe></div>
-
-<div class="embed-video-container"><iframe width="250" height="190" src="https://www.youtube.com/embed/rdqGkcPLXtA" frameborder="0" allowfullscreen></iframe></div>
-
-<div class="embed-video-container"><iframe width="250" height="190" src="https://www.youtube.com/embed/WpdK5LSF_rU" frameborder="0" allowfullscreen></iframe> </div>
+<p><div class="embed-video-container"><iframe src="//www.youtube.com/embed/5ksXNbJz9hg" allowfullscreen></iframe></div><br>
+<div class="embed-video-container"><iframe src="//www.youtube.com/embed/rdqGkcPLXtA" allowfullscreen></iframe></div><br>
+<div class="embed-video-container"><iframe src="//www.youtube.com/embed/WpdK5LSF_rU" allowfullscreen></iframe></div></p>
 
 <p>That&#39;s it for now, be sure to come back for more reads.<br>
 gficht</p>
@@ -75,6 +73,9 @@ gficht</p>
 <p><img src="http://gficht.github.io/images/2015/04/01.jpg" alt="Biped" style="width: 200px;" align="left"/> I&#39;ve just started studying Automation and Robotics at Gdansk university of Technology. I decided to study that, after seeing a video of a robot called OmniZero.2 while still in high school. In the <a href="https://www.youtube.com/watch?v=a5O6ik1Jr6E">video</a> - the robot created by Mr Takeshi Maeda was moving with such agility it was unbelievable for me. He clearly left all the competitors behind. For a technical high school student learning electronics, this was a huge feat. So I decided to give it a go and build something similar. The efforts can be seen on the left.</p>
 
 <p><img src="http://gficht.github.io/images/2015/04/02.jpg" alt="Controller" style="width: 200px;" align="right"/>It used 14 TowerPro SG-5010 servos, the frame was cut out of plexiglass. The design was completely in my head - I drew the parts that were supposed to be cut out in vector graphics. The servocontroller I also did by myself. The PCB was big and bulky. The ATmega16 was just enough to run 24 servos with the use of interrupts. Everything was so unprofessional - but it worked and made me feel good about it. After trying some simple control schemes(a simple walking gait) I abandoned the robot and sold the servos. I learned a lot of valuable things by doing the project. This prepared me for another one I&#39;d be doing in the future.</p>
+
+<p>Thanks for reading, hope you liked it.<br>
+gficht</p>
 ]]></content>
   </entry>
   
